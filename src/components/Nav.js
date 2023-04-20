@@ -18,12 +18,12 @@ export default function Nav() {
         </div>
         <div className="nav__link">
           <Link to="/propertiesList">
-            <div className="navList">Properties</div>
+            <div className="navList">Search for Properties</div>
           </Link>
         </div>
         <div className="nav__link">
-          <Link to="/brokersList">
-            <div className="navList">Brokers</div>
+          <Link to="/displayAllBrokers">
+            <div className="navList">Find a Broker</div>
           </Link>
         </div>
         {/* <div className="nav__link">
@@ -32,8 +32,8 @@ export default function Nav() {
           </Link>
         </div> */}
         <div className="nav__link">
-          <Link to="/listPropertyBroker">
-            <div className="navList">List Property</div>
+          <Link to="/listBroker">
+            <div className="navList">List Your Business</div>
           </Link>
         </div>
       </div>
