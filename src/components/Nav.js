@@ -17,8 +17,7 @@ export default function Nav() {
           </Link>
         </div>
         <div className="nav__link">
-          {/* <Link to="/propertiesList"> */}
-          <Link to="/displayData">
+          <Link to="/propertiesList">
             <div className="navList">Properties</div>
           </Link>
         </div>
