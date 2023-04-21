@@ -13,7 +13,7 @@
 
 ### Approach Taken:
 
-The Broker Connect web app takes an input from the user and saves it to he local storage. It also defines functions to retrieve data from a ZIP code API endpoint and handle form submissions.
+The Broker Connect web app takes an input from the user and saves it to local storage. It also defines functions to retrieve data[City, State] from a ZIP code API endpoint and handle form submissions.
 
 ### API USED:
 
