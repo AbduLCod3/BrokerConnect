@@ -1,10 +1,15 @@
 ## Broker Connect - README
 
+### Project Description
+
+- The Broker Connect project aims to create a platform for listing available units for sale/rent and connecting users with real estate agents.
+
 ### Technologies Used
 
 - React
 - JavaScript
-- HTML/CSS
+- HTML
+- CSS
 
 ### Approach Taken:
 
