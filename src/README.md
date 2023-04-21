@@ -22,12 +22,13 @@ https://api.zippopotam.us/us/${VALUEGOESHERE}`
 
 ### Link to Live Site
 
-- Real Estate Properties
+- broker-connect.netlify.app
 
 ### Installation Instructions
 
-- Clone Repo:
+- Clone Repo: https://github.com/DevAbdul-codeHub/BrokerConnect
 
 ### Unsolved Problems
 
-- No known issues yet
+- Validate Inputs
+-
