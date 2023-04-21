@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Home() {
   return (
     <div className="home">
@@ -7,9 +9,16 @@ export default function Home() {
           <h1>Connect To Your Future Clients</h1>
           <p>Every 5 mins someone finds a new agent</p>
           <div className="home__buttons">
-            <button className="home__button">List Property </button>
-            <button className="home__button">Find Broker</button>
-            <button className="home__button">Browse Properties</button>
+            <button className="home__button">
+              <Link to="/listBroker">List Property </Link>
+            </button>
+            <button className="home__button">
+              <Link to="/displayAllBrokers">Find Broker</Link>
+            </button>
+            <button className="home__button">
+              {" "}
+              <Link to="/displayAllProperties">Browse Properties</Link>
+            </button>
           </div>
         </div>
         <div className="image__div">
@@ -20,9 +29,6 @@ export default function Home() {
           />
         </div>
       </div>
-      <div className="home__div__row3">WHY US</div>
-      <div className="home__div__row4">FAQ</div>
-      <div className="HomePageLeftDiv"></div>
     </div>
   );
 }

@@ -2,18 +2,18 @@
   margin: 0;
 }
 .App {
-  background-image: url("bg_image.jpg");
+  /* background-image: url("bg_image.jpg"); */
   display: flex;
   flex-direction: column;
 }
 
 .nav {
-  /* border: 2px solid orange; */
-  height: 60px;
+  border: 2px solid rgb(212, 175, 105);
+  height: 70px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: rgb(167, 206, 106);
+  background-color: rgb(226, 230, 220);
   position: sticky;
   top: 0;
   z-index: 100;
@@ -26,7 +26,6 @@
   width: 100px;
   object-fit: contain;
   margin: 0 2px;
-  margin-top: 5px;
   margin-left: 15px;
   max-width: 50%;
 }

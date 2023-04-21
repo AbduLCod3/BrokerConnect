@@ -17,8 +17,8 @@ export default function Nav() {
           </Link>
         </div>
         <div className="nav__link">
-          <Link to="/propertiesList">
-            <div className="navList">Search for Properties</div>
+          <Link to="/displayAllProperties">
+            <div className="navList">Find Properties</div>
           </Link>
         </div>
         <div className="nav__link">
@@ -26,11 +26,7 @@ export default function Nav() {
             <div className="navList">Find a Broker</div>
           </Link>
         </div>
-        {/* <div className="nav__link">
-          <Link to="/about">
-            <div className="navList">About Us</div>
-          </Link>
-        </div> */}
+
         <div className="nav__link">
           <Link to="/listBroker">
             <div className="navList">List Your Business</div>

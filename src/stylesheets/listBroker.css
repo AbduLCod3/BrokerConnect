@@ -149,3 +149,7 @@ body {
   background: #ff6736;
   padding: 12px;
 }
+img {
+  margin-bottom: 45px;
+  max-width: 100%;
+}

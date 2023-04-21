@@ -5,6 +5,7 @@ import Nav from "./components/Nav";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import DisplayAllBrokers from "./pages/DisplayAllBrokers";
+import DisplayAllProperties from "./pages/DisplayAllProperties";
 
 import ListBroker from "./pages/ListBroker";
 
@@ -16,6 +17,10 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/displayAllBrokers" element={<DisplayAllBrokers />} />
+        <Route
+          path="/displayAllProperties"
+          element={<DisplayAllProperties />}
+        />
         <Route path="/listBroker" element={<ListBroker />} />
       </Routes>
       <Footer />

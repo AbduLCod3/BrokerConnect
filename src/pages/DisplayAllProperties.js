@@ -4,6 +4,8 @@ import "../stylesheets/displayAllProperties.css";
 export default function DisplayAllProperties() {
   const [data, setData] = useState([]);
 
+  // State to hold city and state
+
   useEffect(() => {
     const existingData = JSON.parse(localStorage.getItem("data") || "[]");
     setData(existingData);
@@ -14,18 +16,19 @@ export default function DisplayAllProperties() {
       <div class="card-container">
         {data.length > 0 ? (
           <div>
-            {data.map((item, index) => (
+            {data.map((property, index) => (
               <div class="card" key={index}>
                 <div class="content">
                   <img src="https://placeimg.com/800/500/arch" alt="img1a" />
                   <p>
-                    <strong>
-                      {item.brokerFName} {item.brokerLName}
-                    </strong>
+                    <strong>{property.propertyType} |</strong>
                   </p>
-
                   <p>
-                    {item.brokerEmail} | {item.brokerPhone}
+                    {property.propertySize} SqFt | {property.propertyPrice}
+                  </p>
+                  <p>
+                    {property.propertyZipCode} | {property.city} |{" "}
+                    {property.state}
                   </p>
                 </div>
               </div>

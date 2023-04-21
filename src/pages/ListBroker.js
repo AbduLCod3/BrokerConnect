@@ -12,6 +12,24 @@ export default function ListBroker() {
   const [propertyZipCode, setPropertyZipCode] = useState("");
   const [propertyPrice, setPropertyPrice] = useState("");
 
+  const [city, setCity] = useState("");
+  const [state, setState] = useState("");
+
+  // async function to fetch data from the API and update the state variables
+  const getCityState = async (zipcode) => {
+    // async function fetchData() {
+    // Use the fetch() function to retrieve data from the API endpoint
+    const response = await fetch(`https://api.zippopotam.us/us/${zipcode}`);
+
+    // Parse the response data as a JSON object
+    const data = await response.json();
+
+    // Extract city and state from the data object
+    // set the corresponding state variables
+    setCity(data.places[0]["place name"]);
+    setState(data.places[0].state);
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -24,6 +42,8 @@ export default function ListBroker() {
       propertySize,
       propertyZipCode,
       propertyPrice,
+      city,
+      state,
     };
     const existingData = JSON.parse(localStorage.getItem("data") || "[]");
 
@@ -47,15 +67,11 @@ export default function ListBroker() {
       {/* <!-- Author: FormBold Team -->
     <!-- Learn More: https://formbold.com --> */}
       <div class="formbold-form-wrapper">
-        {/* <img src="your-image-url-here.jpg"> */}
+        <img src="https://placeimg.com/800/500/arch" alt="img1a" />
 
-        <form
-          onSubmit={handleSubmit}
-          action="https://formbold.com/s/FORM_ID"
-          method="POST"
-        >
+        <form onSubmit={handleSubmit}>
           <div class="formbold-form-title">
-            <h2 class="">Register now</h2>
+            <h2 class="">List Business</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt.
@@ -72,7 +88,6 @@ export default function ListBroker() {
                 name="firstname"
                 id="firstname"
                 class="formbold-form-input"
-                ///////////////////////////
                 placeholder="Abdul"
                 value={brokerFName}
                 onChange={(e) => setBrokerFName(e.target.value)}
@@ -88,7 +103,6 @@ export default function ListBroker() {
                 name="lastname"
                 id="lastname"
                 class="formbold-form-input"
-                ///////////////////////////
                 placeholder="Rahman"
                 value={brokerLName}
                 onChange={(e) => setBrokerLName(e.target.value)}
@@ -106,8 +120,7 @@ export default function ListBroker() {
                 name="email"
                 id="email"
                 class="formbold-form-input"
-                ///////////////////////////
-                placeholder="Abdul.kasmo@gmail.com"
+                placeholder="abdul.kasmo@gmail.com"
                 value={brokerEmail}
                 onChange={(e) => setBrokerEmail(e.target.value)}
               />
@@ -174,6 +187,7 @@ export default function ListBroker() {
                 placeholder="60609"
                 value={propertyZipCode}
                 onChange={(e) => setPropertyZipCode(e.target.value)}
+                onBlur={(e) => getCityState(e.target.value)}
               />
             </div>
 
@@ -186,8 +200,7 @@ export default function ListBroker() {
                 name="propertyPrice"
                 id="propertyPrice"
                 class="formbold-form-input"
-                ///////////////////////////
-                placeholder="Raham"
+                placeholder="$ 900,000"
                 value={propertyPrice}
                 onChange={(e) => setPropertyPrice(e.target.value)}
               />
