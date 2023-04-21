@@ -87,6 +87,7 @@ export default function ListBroker() {
                 First name
               </label>
               <input
+                className="formbold-form-input"
                 type="text"
                 placeholder="Abdul"
                 value={brokerFName}
@@ -99,6 +100,7 @@ export default function ListBroker() {
                 Last Name
               </label>
               <input
+                className="formbold-form-input"
                 type="text"
                 placeholder="Rahman"
                 value={brokerLName}
@@ -113,6 +115,7 @@ export default function ListBroker() {
                 Email
               </label>
               <input
+                className="formbold-form-input"
                 type="text"
                 placeholder="abdul.kasmo@gmail.com"
                 value={brokerEmail}
@@ -125,6 +128,7 @@ export default function ListBroker() {
                 Phone #
               </label>
               <input
+                className="formbold-form-input"
                 type="text"
                 placeholder="507-000-0101"
                 value={brokerPhone}
@@ -139,6 +143,7 @@ export default function ListBroker() {
                 Property Type
               </label>
               <input
+                className="formbold-form-input"
                 type="text"
                 placeholder="Apartment"
                 value={propertyType}
@@ -151,6 +156,7 @@ export default function ListBroker() {
                 Property Size
               </label>
               <input
+                className="formbold-form-input"
                 type="text"
                 placeholder="1200 SqFt"
                 value={propertySize}
@@ -164,6 +170,7 @@ export default function ListBroker() {
                 Property ZipCode
               </label>
               <input
+                className="formbold-form-input"
                 type="text"
                 placeholder="60609"
                 value={propertyZipCode}
@@ -177,6 +184,7 @@ export default function ListBroker() {
                 Property Price
               </label>
               <input
+                className="formbold-form-input"
                 type="text"
                 placeholder="900,000"
                 value={propertyPrice}
@@ -185,7 +193,11 @@ export default function ListBroker() {
             </div>
           </div>
 
-          <button type="submit" class="home__button">
+          <button
+            type="submit"
+            className="formbold-form-input"
+             id="btn" class="home__button"
+          >
             Submit
           </button>
         </form>

@@ -23,7 +23,7 @@ export default function App() {
         />
         <Route path="/listBroker" element={<ListBroker />} />
       </Routes>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
