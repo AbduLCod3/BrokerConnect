@@ -88,9 +88,6 @@ export default function ListBroker() {
               </label>
               <input
                 type="text"
-                name="firstname"
-                id="firstname"
-                class="formbold-form-input"
                 placeholder="Abdul"
                 value={brokerFName}
                 onChange={(e) => setBrokerFName(e.target.value)}
@@ -103,9 +100,6 @@ export default function ListBroker() {
               </label>
               <input
                 type="text"
-                name="lastname"
-                id="lastname"
-                class="formbold-form-input"
                 placeholder="Rahman"
                 value={brokerLName}
                 onChange={(e) => setBrokerLName(e.target.value)}
@@ -120,9 +114,6 @@ export default function ListBroker() {
               </label>
               <input
                 type="text"
-                name="email"
-                id="email"
-                class="formbold-form-input"
                 placeholder="abdul.kasmo@gmail.com"
                 value={brokerEmail}
                 onChange={(e) => setBrokerEmail(e.target.value)}
@@ -135,9 +126,6 @@ export default function ListBroker() {
               </label>
               <input
                 type="text"
-                name="phone"
-                id="phone"
-                class="formbold-form-input"
                 placeholder="507-000-0101"
                 value={brokerPhone}
                 onChange={(e) => setBrokerPhone(e.target.value)}
@@ -152,9 +140,6 @@ export default function ListBroker() {
               </label>
               <input
                 type="text"
-                name="propertyType"
-                id="propertyType"
-                class="formbold-form-input"
                 placeholder="Apartment"
                 value={propertyType}
                 onChange={(e) => setPropertyType(e.target.value)}
@@ -167,9 +152,6 @@ export default function ListBroker() {
               </label>
               <input
                 type="text"
-                name="lastpropertySizename"
-                id="propertySize"
-                class="formbold-form-input"
                 placeholder="1200 SqFt"
                 value={propertySize}
                 onChange={(e) => setPropertySize(e.target.value)}
@@ -183,9 +165,6 @@ export default function ListBroker() {
               </label>
               <input
                 type="text"
-                name="propertyZipCode"
-                id="propertyZipCode"
-                class="formbold-form-input"
                 placeholder="60609"
                 value={propertyZipCode}
                 onChange={(e) => setPropertyZipCode(e.target.value)}
@@ -199,10 +178,7 @@ export default function ListBroker() {
               </label>
               <input
                 type="text"
-                name="propertyPrice"
-                id="propertyPrice"
-                class="formbold-form-input"
-                placeholder="$ 900,000"
+                placeholder="900,000"
                 value={propertyPrice}
                 onChange={(e) => setPropertyPrice(e.target.value)}
               />
@@ -210,7 +186,7 @@ export default function ListBroker() {
           </div>
 
           <button type="submit" class="home__button">
-            Register Now
+            Submit
           </button>
         </form>
       </div>

@@ -36,4 +36,8 @@ https://api.zippopotam.us/us/${VALUEGOESHERE}`
 ### Unsolved Problems
 
 - Validate Inputs
--
+
+### Goals
+
+- Add more marketing contents.
+- use Crime data API to get crime data/metrics
