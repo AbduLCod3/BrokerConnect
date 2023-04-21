@@ -139,3 +139,26 @@
   gap: 10px;
   padding-left: 30px;
 }
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  text-align: center;
+  color: red;
+  font-size: medium;
+  margin-bottom: 5px;
+}
+/* footer {
+background-color: #FFF;
+position:fixed;
+bottom: 0px;
+width: 400px;
+text-align: center;
+}
+<footer align="center">
+    <p>March 25, 2</p>
+</footer> */

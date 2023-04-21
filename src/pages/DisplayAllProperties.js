@@ -2,12 +2,15 @@ import React, { useState, useEffect } from "react";
 import "../stylesheets/displayAllProperties.css";
 
 export default function DisplayAllProperties() {
+  // State to hold the data fetched from local storage
   const [data, setData] = useState([]);
 
-  // State to hold city and state
-
+  // Fetch data from local storage when the component mounts
   useEffect(() => {
+    // Parse the data stored in local storage,
+    // or set it to an empty array if it doesn't exist
     const existingData = JSON.parse(localStorage.getItem("data") || "[]");
+    // Update the data state with the parsed data
     setData(existingData);
   }, []);
 
@@ -24,7 +27,7 @@ export default function DisplayAllProperties() {
                     <strong>{property.propertyType} |</strong>
                   </p>
                   <p>
-                    {property.propertySize} SqFt | {property.propertyPrice}
+                    {property.propertySize} sqft | ${property.propertyPrice}
                   </p>
                   <p>
                     {property.propertyZipCode} | {property.city} |{" "}

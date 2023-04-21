@@ -15,7 +15,8 @@ export default function ListBroker() {
   const [city, setCity] = useState("");
   const [state, setState] = useState("");
 
-  // async function to fetch data from the API and update the state variables
+  // async function to fetch data from the API
+  // and update the [cite, state] state variables
   const getCityState = async (zipcode) => {
     // async function fetchData() {
     // Use the fetch() function to retrieve data from the API endpoint
@@ -45,13 +46,17 @@ export default function ListBroker() {
       city,
       state,
     };
-    const existingData = JSON.parse(localStorage.getItem("data") || "[]");
 
+    // retrieve existing data from local storage
+    //or create an empty array if none exists
+    const existingData = JSON.parse(localStorage.getItem("data") || "[]");
+    //push the new list object to the existing data array
     existingData.push(newList);
+
+    // save the updated data array to local storage
     localStorage.setItem("data", JSON.stringify(existingData));
 
     // reset state variables to empty strings
-    // use useEffect later here below
     setBrokerFName("");
     setBrokerLName("");
     setBrokerEmail("");
@@ -64,8 +69,6 @@ export default function ListBroker() {
 
   return (
     <div class="formbold-main-wrapper">
-      {/* <!-- Author: FormBold Team -->
-    <!-- Learn More: https://formbold.com --> */}
       <div class="formbold-form-wrapper">
         <img src="https://placeimg.com/800/500/arch" alt="img1a" />
 
@@ -135,7 +138,6 @@ export default function ListBroker() {
                 name="phone"
                 id="phone"
                 class="formbold-form-input"
-                ///////////////////////////
                 placeholder="507-000-0101"
                 value={brokerPhone}
                 onChange={(e) => setBrokerPhone(e.target.value)}

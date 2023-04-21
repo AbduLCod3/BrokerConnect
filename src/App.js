@@ -6,12 +6,12 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import DisplayAllBrokers from "./pages/DisplayAllBrokers";
 import DisplayAllProperties from "./pages/DisplayAllProperties";
-
 import ListBroker from "./pages/ListBroker";
 
 export default function App() {
   return (
     <div className="App">
+      {/* // Renders the Nav component */}
       <Nav />
 
       <Routes>
