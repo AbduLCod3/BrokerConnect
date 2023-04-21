@@ -42,3 +42,6 @@ https://api.zippopotam.us/us/${VALUEGOESHERE}`
 
 - Add more marketing contents.
 - use Crime data API to get crime data/metrics
+- Add a component to handle buttons
+- Add a Search bar
+- Add filter feature
