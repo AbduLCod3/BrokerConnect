@@ -23,5 +23,3 @@ The Broker Connect web app takes an input from the user and saves it to he local
 ### Unsolved Problems
 * No known issues yet
 
-###
-There are currently no known unsolved problems with the Real Estate Properties app.
