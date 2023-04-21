@@ -32,6 +32,7 @@ https://api.zippopotam.us/us/${VALUEGOESHERE}`
 ### Installation Instructions
 
 - Clone Repo: https://github.com/DevAbdul-codeHub/BrokerConnect
+- run npm start
 
 ### Unsolved Problems
 
